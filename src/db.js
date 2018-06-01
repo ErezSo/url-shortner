@@ -3,4 +3,4 @@ const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 
 dotenv.load();
-mongoose.connect(process.env.MLAB_SECRET_KEY);
+mongoose.connect(process.env.SECRET_KEY);
