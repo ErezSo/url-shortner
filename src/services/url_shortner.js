@@ -2,6 +2,7 @@ const alphanumric =
   "123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ";
 const base = alphanumric.length;
 
+// source: https://coligo.io/create-url-shortener-with-node-express-mongo/
 function encode(num) {
   let encoded = "";
   while (num) {
