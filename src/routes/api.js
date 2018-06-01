@@ -1,11 +1,11 @@
 const express = require("express");
-const setUrl = require("../services/setUrl");
-const goToUrl = require("../services/goToUrl");
+const setUrl = require("./setUrl");
+const goToUrl = require("./goToUrl");
 
 const router = express.Router();
 
 router.route("/set_url").post(setUrl);
-router.route("/:shortUrl").post(goToUrl);
+router.route("/:urlId").post(goToUrl);
 
 const errorsMiddleware = (err, req, res, next) => {
   console.error(err.message); // eslint-disable-line no-console
